@@ -69,7 +69,7 @@ public class Main {
             TouristTicket touristTicket = new TouristTicket("Mumbai ", 7122, 12, 2500, "Confirmed",
                     touristLocationsList);
 
-            touristTicket.addTouristLocation("ECR");
+            touristTicket.addTouristLocation("Goa");
             touristTicket.removeTouristLocation("pune");
             List<String> locations = touristTicket.getTouristLocations();
             System.out.println("Tourist locations: " + locations);

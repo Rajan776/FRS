@@ -7,13 +7,13 @@ import java.util.*;
 public class Main {
       public static void main(String[] args) {
 //    Address
-            Address address = new Address("Othakkalmandapam", "Coimbatore", "Tamilnadu");
+            Address address = new Address("Parel", "Mumbai", "Maharastra");
             System.out.println(address.address());
             System.out.println("---------------------------------------------------------------------------");
 
 
 //    Contact
-            Contact contact = new Contact("Dinesh", 875479631, "dineshlakshmanan26@gmail.com");
+            Contact contact = new Contact("Rajan", 123456789, "tiwarirajan776@gmail.com");
             System.out.println(contact.contact());
             System.out.println("---------------------------------------------------------------------------");
 
@@ -25,15 +25,15 @@ public class Main {
             LocalDate arrivalDate = LocalDate.of(2022, 01, 01);
             LocalTime arrivalTime = LocalTime.of(9, 30);
             LocalDateTime arrivalDateTime = LocalDateTime.of(arrivalDate, arrivalTime);
-            Flight flight = new Flight(1234, "Kingfisher", 100, 55, "Coimbatore",
-                    "Chennai", departureDateTime, arrivalDateTime);
+            Flight flight = new Flight(1234, "AirIndia", 100, 55, "Mumbai",
+                    "Maharastra", departureDateTime, arrivalDateTime);
 
             System.out.println(flight.flight());
             System.out.println("---------------------------------------------------------------------------");
 
 //    Passenger
 //    accessing attributes and methods of Passenger class
-            Passenger passenger = new Passenger("Dinesh Kumar", 875479631, "dineshlakshmanan26@gmail.com");
+            Passenger passenger = new Passenger("Rajan Tiwari", 123456789, "tiwarirajan776@gmail.com");
             System.out.println(passenger.getId());
             System.out.println("---------------------------------------------------------------------------");
 
@@ -63,14 +63,14 @@ public class Main {
 
             Address hotelAddress = new Address("street1", "city1", "state1");
             List<String> touristLocationsList = new ArrayList<>();
-            touristLocationsList.add("Adayar");
-            touristLocationsList.add("Marina");
+            touristLocationsList.add("pune");
+            touristLocationsList.add("Nagpur");
 
-            TouristTicket touristTicket = new TouristTicket("Chennai ", 7122, 12, 2500, "Confirmed",
+            TouristTicket touristTicket = new TouristTicket("Mumbai ", 7122, 12, 2500, "Confirmed",
                     touristLocationsList);
 
             touristTicket.addTouristLocation("ECR");
-            touristTicket.removeTouristLocation("Adayar");
+            touristTicket.removeTouristLocation("pune");
             List<String> locations = touristTicket.getTouristLocations();
             System.out.println("Tourist locations: " + locations);
       }
